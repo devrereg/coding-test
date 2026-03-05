@@ -1,13 +1,19 @@
-def solution(num, n):
-    result = 0 if num % n != 0 else 1
+#
+def solution(num_list, n):
+    result = []
+    for i in range(len(num_list) - (n - 1)):
+        result.append(num_list[n - 1 + i])
+
     return result
 
-# 다른 풀이
-def solution2(num, n):
-    print(not(0), not(1), not(-1))
 
-    return int(not(num % n))
+# 모범 답안
+def solution2(num_list, n, m):
+    return num_list[n: m]
+
 
 if __name__ == "__main__":
-    print(solution(98, 2))
-    print(solution2(34, 3))
+    print(solution([2, 1, 6], 3))
+    print(solution2([5, 2, 1, 7, 5], 2,4))
+
+

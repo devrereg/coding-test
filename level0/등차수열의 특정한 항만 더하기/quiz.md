@@ -25,3 +25,5 @@ included가 true인 항들만 더한 값을 return 하는 solution 함수를 작
 |----------|------|-------|-------|------|------|
 | 등차수열     | 3    | 7     | 11    | 15   | 19   |
 | included | true | false | false | true | true |
+
+따라서 true에 해당하는 1항, 4항, 5항을 더한 3 + 15 + 19 = 37을 return 합니다.

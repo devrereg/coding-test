@@ -20,5 +20,5 @@ def solution2(arr, k):
 # 다른풀이
 def solution3(arr, k):
     res = list(dict.fromkeys(arr))
-    res.extend([-1] * max(0, k - len(res))
+    res.extend([-1] * max(0, k - len(res)))
     return res[:k]

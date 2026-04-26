@@ -65,7 +65,7 @@ def solution3(n):
     dx = [1, 0, -1, 0]
     y, x = 0, -1
 
-    arr = [[0] * n for _ in range(n)]
+    arr = [[0] * n for _ in range(n)] # 2차원 배열 세팅
     cnt = 1
     direction = 0
     while cnt <= n**2:
